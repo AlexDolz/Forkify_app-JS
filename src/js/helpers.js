@@ -8,6 +8,11 @@ const timeout = function (s) {
     }, s * 1000);
   });
 };
+export const wait = function (sec) {
+  return new Promise(function (resolve) {
+    setTimeout(resolve, sec * 1000);
+  });
+};
 
 export const AJAX = async function (url, uploadData = undefined) {
   try {

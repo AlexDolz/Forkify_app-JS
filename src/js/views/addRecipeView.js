@@ -1,4 +1,6 @@
 import View from './View.js';
+import { wait } from '../helpers.js';
+import { MODAL_CLOSE_SEC, MODAL_RENDER_FORM_SEC } from '../config.js';
 import icons from 'url:../../img/icons.svg'; //Parcel 2
 
 class addRecipeView extends View {
@@ -13,6 +15,27 @@ class addRecipeView extends View {
     super();
     this._addHandlerShowWindow();
     this._addHandlerHideWindow();
+  }
+  _formElement = document.querySelector('.upload').innerHTML;
+
+  async closeFormWindow() {
+    this.toggleWindow();
+  }
+
+  async clearRender() {
+    this._clear();
+    this._parentElement.insertAdjacentHTML('afterbegin', this._formElement);
+  }
+
+  async renderForm() {
+    try {
+      await wait(MODAL_CLOSE_SEC);
+      await this.closeFormWindow();
+      await wait(MODAL_RENDER_FORM_SEC);
+      await this.clearRender();
+    } catch (err) {
+      console.error(err);
+    }
   }
 
   toggleWindow() {
