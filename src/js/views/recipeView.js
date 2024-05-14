@@ -25,7 +25,6 @@ class RecipeView extends View {
       const btn = e.target.closest('.btn--bookmark');
       if (!btn) return;
       handler();
-      console.log(handler);
     });
   }
 
