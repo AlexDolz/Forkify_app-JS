@@ -34,6 +34,16 @@ html {
   @media only screen and (max-width: $bp-medium) {
     font-size: 50%;
   }
+
+  @media (max-width: 758px) {
+    font-size: 47%;
+  }
+  @media (max-width: 677px) {
+    font-size: 45%;
+  }
+  @media (max-width: 642px) {
+    font-size: 42%;
+  }
 }
 
 body {

@@ -69,6 +69,10 @@
   align-items: center;
   transition: all 0.2s;
 
+  @media (max-width: 703px) {
+    font-size: 1rem;
+  }
+
   svg {
     height: 1.6rem;
     width: 1.6rem;
