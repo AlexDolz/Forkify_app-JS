@@ -9,6 +9,12 @@
     margin-left: 4rem;
     height: 4.6rem;
     display: block;
+    @media (max-width: 544px) {
+      margin-left: 2rem;
+    }
+    @media (max-width: 511px) {
+      height: 4rem;
+    }
   }
 }
 
@@ -19,6 +25,9 @@
   align-items: center;
   padding-left: 3rem;
   transition: all 0.3s;
+  @media (max-width: 544px) {
+    padding-left: 0;
+  }
 
   &:focus-within {
     transform: translateY(-2px);

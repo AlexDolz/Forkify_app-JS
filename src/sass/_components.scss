@@ -28,6 +28,9 @@
   padding: 1.5rem 4rem;
   font-size: 1.5rem;
   font-weight: 600;
+  @media (max-width: 511px) {
+    padding: 1.5rem 2rem;
+  }
 
   svg {
     height: 2.25rem;
