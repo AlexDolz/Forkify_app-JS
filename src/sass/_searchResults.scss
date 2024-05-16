@@ -7,10 +7,16 @@
 .results {
   list-style: none;
   margin-bottom: 2rem;
+  @media (max-width: 544px) {
+    display: flex;
+    flex-direction: column;
+    height: 27rem;
+    overflow: auto;
+  }
 }
 
 .pagination {
-  margin-top: auto;
+  // margin-top: auto;
   padding: 0 3.5rem;
   @media (max-width: 703px) {
     padding: 0 2rem;
@@ -40,17 +46,17 @@
   }
 }
 
-.copyright {
-  color: $color-grey-dark-2;
-  font-size: 1.2rem;
-  padding: 0 3.5rem;
-  margin-top: 4rem;
-  @media (max-width: 677px) {
-    margin-top: 7rem;
-  }
+// .copyright {
+//   color: $color-grey-dark-2;
+//   font-size: 1.2rem;
+//   padding: 0 3.5rem;
+//   margin-top: 4rem;
+//   @media (max-width: 677px) {
+//     margin-top: 7rem;
+//   }
 
-  .twitter-link:link,
-  .twitter-link:visited {
-    color: $color-grey-dark-2;
-  }
-}
+//   .twitter-link:link,
+//   .twitter-link:visited {
+//     color: $color-grey-dark-2;
+//   }
+// }

@@ -44,6 +44,21 @@ html {
   @media (max-width: 642px) {
     font-size: 42%;
   }
+  @media (max-width: 617px) {
+    font-size: 41%;
+  }
+  @media (max-width: 599px) {
+    font-size: 40%;
+  }
+  @media (max-width: 585px) {
+    font-size: 39%;
+  }
+  @media (max-width: 570px) {
+    font-size: 38%;
+  }
+  @media (max-width: 560px) {
+    font-size: 37%;
+  }
 }
 
 body {
@@ -73,6 +88,15 @@ body {
     'head head'
     'list recipe';
 
+  @media (max-width: 544px) {
+    grid-template-rows: 10rem auto auto; /* Header row, List row, Recipe row */
+    grid-template-columns: 1fr; /* Single column layout */
+    grid-template-areas:
+      'head'
+      'list'
+      'recipe';
+    gap: 1rem; /* Optional: gap between the rows */
+  }
   @media only screen and (max-width: $bp-large) {
     max-width: 100%;
     margin: 0;
