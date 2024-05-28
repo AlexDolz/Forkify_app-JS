@@ -4,6 +4,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media (max-width: 461px) {
+    flex-wrap: wrap;
+  }
+  @media (max-width: 458px) {
+    justify-content: center;
+    padding: 2rem 0;
+    height: 13rem;
+  }
 
   &__logo {
     margin-left: 4rem;
@@ -14,6 +22,18 @@
     }
     @media (max-width: 511px) {
       height: 4rem;
+    }
+    @media (max-width: 461px) {
+      padding-right: 0.8rem;
+    }
+    @media (max-width: 458px) {
+      padding-right: 5rem;
+    }
+    @media (max-width: 377px) {
+      padding-right: 2rem;
+    }
+    @media (max-width: 363px) {
+      margin-left: 0;
     }
   }
 }
@@ -28,6 +48,15 @@
   @media (max-width: 544px) {
     padding-left: 0;
   }
+  @media (max-width: 386px) {
+    margin-right: 6rem;
+  }
+  @media (max-width: 353px) {
+    margin-right: 8rem;
+  }
+  @media (max-width: 339px) {
+    margin-right: 11.5rem;
+  }
 
   &:focus-within {
     transform: translateY(-2px);
@@ -41,6 +70,9 @@
     color: inherit;
     font-size: 1.7rem;
     width: 30rem;
+    @media (max-width: 544px) {
+      padding-left: 2rem;
+    }
 
     &:focus {
       outline: none;
@@ -68,6 +100,10 @@
 .nav {
   align-self: stretch;
   margin-right: 2.5rem;
+  @media (max-width: 458px) {
+    margin-right: 0;
+    padding: 2rem;
+  }
 
   &__list {
     list-style: none;
@@ -94,6 +130,9 @@
 
     display: flex;
     align-items: center;
+    @media (max-width: 469px) {
+      padding: 0 1rem;
+    }
 
     svg {
       height: 2.4rem;
