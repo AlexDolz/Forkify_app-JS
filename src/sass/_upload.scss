@@ -11,6 +11,30 @@
   box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.25);
   z-index: 1000;
   transition: all 0.5s;
+  @media (max-width: 1002px) {
+    max-width: max-content;
+  }
+  @media (max-width: 791px) {
+    max-width: 94rem;
+  }
+  @media (max-width: 709px) {
+    max-width: 90rem;
+  }
+  @media (max-width: 535px) {
+    max-width: 85rem;
+  }
+  @media (max-width: 508px) {
+    max-width: fit-content;
+  }
+  @media (max-width: 473px) {
+    padding: 5rem 5rem;
+  }
+  @media (max-width: 462px) {
+    padding: 5rem 4rem;
+  }
+  @media (max-width: 449px) {
+    padding: 5rem 3rem;
+  }
 
   .btn--close-modal {
     font-family: inherit;
@@ -46,6 +70,18 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem 6rem;
+  @media (max-width: 508px) {
+    gap: 4rem 5rem;
+  }
+  @media (max-width: 377px) {
+    gap: 4rem 4rem;
+  }
+  @media (max-width: 372px) {
+    gap: 4rem 3rem;
+  }
+  @media (max-width: 364px) {
+    gap: 4rem 2rem;
+  }
 
   &__column {
     display: grid;
@@ -57,6 +93,9 @@
       font-size: 1.5rem;
       font-weight: 600;
       color: inherit;
+      @media (max-width: 508px) {
+        width: 8.3rem;
+      }
     }
 
     & input {
@@ -65,6 +104,30 @@
       border: 1px solid #ddd;
       border-radius: 0.5rem;
       transition: all 0.2s;
+      @media (max-width: 508px) {
+        width: 21rem;
+      }
+      @media (max-width: 441px) {
+        width: 19rem;
+      }
+      @media (max-width: 414px) {
+        width: 18rem;
+      }
+      @media (max-width: 406px) {
+        width: 17rem;
+      }
+      @media (max-width: 390px) {
+        width: 16rem;
+      }
+      @media (max-width: 359px) {
+        width: 15rem;
+      }
+      @media (max-width: 347px) {
+        width: 14rem;
+      }
+      @media (max-width: 337px) {
+        width: 13rem;
+      }
 
       &::placeholder {
         color: $color-grey-light-3;

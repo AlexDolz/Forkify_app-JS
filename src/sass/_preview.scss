@@ -81,6 +81,9 @@
       font-size: 1.6rem;
       min-width: fit-content;
     }
+    @media (max-width: 350px) {
+      font-size: 1.5rem;
+    }
 
     // This is how text is truncated!
     text-overflow: ellipsis;

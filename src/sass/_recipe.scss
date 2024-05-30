@@ -71,6 +71,21 @@
     @media (max-width: 373px) {
       padding: 7.5rem 8rem 3.5rem 6rem;
     }
+    @media (max-width: 360px) {
+      padding: 7.5rem 8rem 3.5rem 5rem;
+    }
+    @media (max-width: 352px) {
+      padding: 7.5rem 8rem 3.5rem 4rem;
+    }
+    @media (max-width: 336px) {
+      padding: 7.5rem 8rem 3.5rem 3rem;
+    }
+    @media (max-width: 327px) {
+      padding: 7.5rem 8rem 3.5rem 2rem;
+    }
+    @media (max-width: 323px) {
+      padding: 7.5rem 8rem 3.5rem 1.7rem;
+    }
   }
 
   &__info {
@@ -114,6 +129,9 @@
 
     margin-left: auto;
     margin-right: 1.75rem;
+    @media (max-width: 346px) {
+      margin-right: 0.5rem;
+    }
 
     svg {
       height: 2.25rem;
